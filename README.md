@@ -29,6 +29,8 @@ Lambda Function testing
 ## EC2 dashboard showing updated instance states.
 ![Screenshot EC2 state change snapshot](https://github.com/user-attachments/assets/40d00f28-a67b-4928-8af5-8b212d84504b)
 
+## Assignment 2: Automated S3 Bucket Cleanup (Delete Files Older Than 30 Days)
+
 
 
 
