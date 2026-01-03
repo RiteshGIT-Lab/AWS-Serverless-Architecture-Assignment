@@ -77,6 +77,43 @@ The Lambda function performs the following actions:
   ![File inside bucket snapshot](https://github.com/user-attachments/assets/5fd75beb-5681-4d9c-a148-58aa1ad1ac29)
   ![S3 bucket (sharmaji-s3-cleanup-bucket) Snapshot](https://github.com/user-attachments/assets/c7423b63-190a-4b47-9e66-05488cf1ab13)
 
+  ## Assignment-3 Detect Unencrypted S3 Buckets
+   ## Summary
+To identify Amazon S3 buckets that do not have server-side encryption enabled using AWS Lambda and Boto3.
+## Step 1: S3 Bucket Setup
+- Verified existing S3 buckets.
+- Ensured at least one bucket had server-side encryption disabled.
+  ![Bucket snapshot](https://github.com/user-attachments/assets/ebc8a2b3-7ab5-4b10-80fb-afc130798204)
+  ## Step 2: IAM Role Creation
+- Created IAM role:
+  **SharmajiLambdaS3ReadOnlyRole**
+- Attached policy:
+  **AmazonS3ReadOnlyAccess**
+  ![IAM role permission snapshot](https://github.com/user-attachments/assets/17fa4f27-e183-4f9c-a7b4-5df42b5bc4f8)
+  ## Step 3: Lambda Function Setup
+- Created Lambda function:
+  **SharmajiDetectUnencryptedS3Lambda**
+- Runtime: Python 3.x
+- Assigned IAM role:
+  **SharmajiLambdaS3ReadOnlyRole**
+![Lambda configuration page snapshot](https://github.com/user-attachments/assets/ed502e40-68a0-4364-9cfa-ac1806162280)
+## Step 5: Testing and Verification
+- Lambda function was manually triggered.
+- Logs confirmed detection of unencrypted buckets.
+  ![Lambda code deployed snapshot](https://github.com/user-attachments/assets/55f17775-b3c9-41b3-8718-4e345f8000b0)
+  ![CloudWatch logs output snapshot](https://github.com/user-attachments/assets/99512cce-e215-41cc-a2db-54cfbc9bf085)
+
+  
+
+
+
+
+
+
+  
+
+  
+
 
 
 
