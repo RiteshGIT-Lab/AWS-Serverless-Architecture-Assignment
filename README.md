@@ -31,6 +31,59 @@ Lambda Function testing
 
 ## Assignment 2: Automated S3 Bucket Cleanup (Delete Files Older Than 30 Days)
 
+## Summary
+The objective of this assignment is to automate the cleanup of an S3 bucket by deleting files that are older than 30 days using AWS Lambda and Boto3.
+
+## Step 1: Create S3 Bucket
+- Created an S3 bucket named:
+  **sharmaji-s3-cleanup-bucket**
+- Uploaded multiple test files into the bucket for cleanup testing.
+- ![File inside bucket snapshot](https://github.com/user-attachments/assets/7ae7b4a5-9924-4228-ab25-b690c456dbe2)
+- 
+  ## Step 2: Create IAM Role for Lambda
+- Created an IAM role named:
+  **SharmajiLambdaS3CleanupRole**
+- Attached policy:
+  **AmazonS3FullAccess**
+- This role allows Lambda to list and delete S3 objects.
+  ![IAM role summary snasphot](https://github.com/user-attachments/assets/174dd9be-1b97-48b5-bae1-e712eee3fb56)
+  ## Step 3: Create AWS Lambda Function
+- Created a Lambda function named:
+  **SharmajiS3CleanupLambda**
+- Runtime used:
+  **Python 3.x**
+- Assigned execution role:
+  **SharmajiLambdaS3CleanupRole**
+  ![Lambda code deployed snapshot](https://github.com/user-attachments/assets/2935dc8e-9650-4e46-8d95-b2bd6a41899e)
+
+  ## Step 4: Lambda Function Logic
+The Lambda function performs the following actions:
+1. Connects to S3 using Boto3.
+2. Lists all objects in the specified bucket.
+3. Calculates the date older than 30 days.
+4. Deletes files older than 30 days.
+5. Logs deleted file names for verification.
+![Lambda configuration snapshot](https://github.com/user-attachments/assets/a50097c5-a7c7-406d-aa88-a533a86def04)
+
+## Step 5: Testing the Lambda Function
+- A test event was created in Lambda.
+- Lambda function was manually triggered.
+- Execution completed successfully without errors.
+  ![Test execution logs snapshot](https://github.com/user-attachments/assets/8324ecea-34c3-4a14-b30b-952a8206b640)
+
+  ## Step 6: Verification
+- Verified the S3 bucket contents after Lambda execution.
+- Older files were removed
+  ![File inside bucket snapshot](https://github.com/user-attachments/assets/5fd75beb-5681-4d9c-a148-58aa1ad1ac29)
+  ![S3 bucket (sharmaji-s3-cleanup-bucket) Snapshot](https://github.com/user-attachments/assets/c7423b63-190a-4b47-9e66-05488cf1ab13)
+
+
+
+
+
+
+
+
 
 
 
