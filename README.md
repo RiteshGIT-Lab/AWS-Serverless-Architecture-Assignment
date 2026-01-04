@@ -103,6 +103,10 @@ To identify Amazon S3 buckets that do not have server-side encryption enabled us
   ![Lambda code deployed snapshot](https://github.com/user-attachments/assets/55f17775-b3c9-41b3-8718-4e345f8000b0)
   ![CloudWatch logs output snapshot](https://github.com/user-attachments/assets/99512cce-e215-41cc-a2db-54cfbc9bf085)
 
+ ## Assignment 4 Archive Old Files from S3 to Glacier (Lambda + Boto3)
+
+ 
+
   
 
 
