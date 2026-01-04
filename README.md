@@ -104,6 +104,26 @@ To identify Amazon S3 buckets that do not have server-side encryption enabled us
   ![CloudWatch logs output snapshot](https://github.com/user-attachments/assets/99512cce-e215-41cc-a2db-54cfbc9bf085)
 
  ## Assignment 4 Archive Old Files from S3 to Glacier (Lambda + Boto3)
+## summary
+Automate the archival of S3 objects older than 6 months to Amazon Glacier using AWS Lambda and Boto3.
+
+1. Created an S3 bucket and uploaded data.
+   ![S3 bucket data upload snapshot](https://github.com/user-attachments/assets/ae12b08f-d778-477b-9a10-7c1539495d7e)
+2. Created IAM role with S3 permissions
+   ![Iam role permission snapshot](https://github.com/user-attachments/assets/5702784a-41ab-4d38-95c7-f5ce866aa535)
+3. Developed Lambda function using Python (Boto3)
+  ![Lambda function snapshot](https://github.com/user-attachments/assets/eac1d6d8-d7e1-4037-8786-8ca6045fac6e)
+4. Identified objects older than threshold.
+   ![Lambda test code success snapshot](https://github.com/user-attachments/assets/bee3d229-dce8-43bd-af0c-d59bb50d1e00)
+5. code successfully deployed,Changed storage class to Glacier
+   ![Storage class changed snapshot ](https://github.com/user-attachments/assets/fcf42eb1-b19e-408d-b379-810503d3f1fc)
+   
+
+   
+
+
+   
+
 
  
 
