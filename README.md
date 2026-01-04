@@ -117,6 +117,10 @@ Automate the archival of S3 objects older than 6 months to Amazon Glacier using 
    ![Lambda test code success snapshot](https://github.com/user-attachments/assets/bee3d229-dce8-43bd-af0c-d59bb50d1e00)
 5. code successfully deployed,Changed storage class to Glacier
    ![Storage class changed snapshot ](https://github.com/user-attachments/assets/fcf42eb1-b19e-408d-b379-810503d3f1fc)
+
+## Assignment On Serverless Architecture has been completed. 
+
+## Thank you HeroVired team for designing such a well-structured and hands-on learning assignment. It provided valuable practical exposure to AWS serverless services and strengthened my understanding through real-world implementation.
    
 
    
